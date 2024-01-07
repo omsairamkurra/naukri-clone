@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Job Title</th>
+          <th>Category</th>
+          <th>package</th>
+          <th>experience</th>
+          <th>location</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let job of jobList; let sr = index">
+          <td>{{ sr + 1 }}</td>
+          <td>{{ job.jobName }}</td>
+          <td>{{ job.categoryName }}</td>
+          <td>{{ job.package }}</td>
+          <td>{{ job.experience }}</td>
+          <td>{{ job.location }}</td>
+          <td>
+            <button class="btn btn-success">Open</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
